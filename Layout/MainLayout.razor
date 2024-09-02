@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+<div class="page">
+    <main class="bg">
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<style type="text/css">
+    .bg {
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(18,138,205,1) 100%);;
+        min-width: 100vh;
+        min-height: 100vh;
+    }
+
+    .content {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alert {
+        margin-top: 20px;
+    }
+
+    .list-group {
+        margin-top: 20px;
+    }
+
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+</style>
